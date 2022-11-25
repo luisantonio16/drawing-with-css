@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --blue: hsl(208, 95%, 44%);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #AADDDE ;
+}
+
+.phone{
+    margin:30px auto;
+    background-color: #fff;
+    border-radius: 1.5em;
+    width: 350px;
+    padding: .6em;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.phone__container{
+    min-height: 300px;
+    overflow: hidden;
+    background-color: #F1F5F5 ;
+    border-radius: 1.5em;
+
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: "top" "main";
+}
+
+.phone__top{
+    position: relative;
+    grid-area: top;
+    background-image: linear-gradient(to left, var(--blue), #7165B8   );
+}
+
+.phone__top::before{
+    content: "";
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+.phone__image--back{
+    width: 25px;
+
+}
+.phone__image--user{
+    width: 45px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.phone__user{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #fff;
+}
+.phone__image--menu{
+    width: 35px;
+}
+.phone__info{
+    margin-left: 15px;
+}
+.phone__name{
+    font-size: 1em;
+}
+.phone__state{
+    font-size: .8em;
+    color: #F1F5F5;
+}
+.phone__image--menu{
+    margin-left: auto;
+    width: 25px;
+}
+
+
+
+.phone__main{
+    grid-area: main;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+
+    display: grid;
+    gap: 1em;
+    grid-auto-rows: max-content;
+}
+
+.phone__chat{
+    width: 75%;
+    background-color: #7C6FCC   ;
+    color: #fff;
+    padding: 1em;
+    border-radius: 1em 1em 1em .5em;
+    font-size: .9em;
+}
+
+.phone__pokemon{
+    justify-self: end;
+    display: grid;
+    grid-auto-flow:column ;
+    gap: .7em;
+    grid-auto-columns: max-content;
+}
+
+.image__pokemon{
+    width: 70px;
+}
+
+.phone__chat--right{
+    justify-self: end;
+    background-color: var(--blue);
+    border-radius: 1em 1em .5em 1em;
+}
+
+.phone__form{
+    display: grid;
+    gap: 1em;
+    
+
+}
+.phone__btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .5em;
+    background-color: #fff;
+    padding: 1em 1em 1em 1.5em;
+    border-radius: 3em;
+}
+
+.phone__send{
+    font-size: 16px;
+    border: none;
+    outline: none;
+
+}
+.phone__send--image{
+    width: 25px;
+    background-color: #0B062B;
+    padding: .2em;
+    border-radius: 50%;
+}
